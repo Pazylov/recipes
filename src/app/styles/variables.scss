@@ -15,5 +15,23 @@ $font-recipe: 'Playfair Display', sans-serif;
 $font-georgia: 'Georgia', sans-serif;
 
 //Размеры
-$container-width: 1260px;
 $container-padding: 15px;
+
+// Брейкпоинты
+$breakpoints: (
+	'mobile-s': 0,
+	'mobile-l': 480px,
+	'tablet': 768px,
+	'laptop': 1024px,
+	'desktop': 1200px,
+	'desktop-xl': 1480px,
+);
+
+$container-widths: (
+	'mobile-s': 100%,
+	'mobile-l': 90%,
+	'tablet': 750px,
+	'laptop': 990px,
+	'desktop': 1170px,
+	'desktop-xl': 1290px,
+);

@@ -1,0 +1,32 @@
+Для конкретного устройства:
+.header {
+  padding: 15px;
+  
+  @include tablet {
+    padding: 20px; // Только для планшетов (768-1023px)
+  }
+  
+  @include desktop-xl {
+    padding: 30px; // Только для больших десктопов (1480px+)
+  }
+}
+
+
+Для диапазона устройств:
+.card {
+  width: 100%;
+  
+  @include between('tablet', 'desktop') {
+    width: 50%; // Для планшетов и ноутбуков (768-1199px)
+  }
+}
+
+
+Для мобильных и десктопов:
+.menu {
+  display: none;
+  
+  @include laptop-and-up {
+    display: flex; // Показываем на ноутбуках и больше (1024px+)
+  }
+}

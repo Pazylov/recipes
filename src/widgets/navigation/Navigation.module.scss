@@ -11,20 +11,33 @@
 			font-size: 18px;
 			letter-spacing: 1px;
 			color: $color-text;
-			transition: all 0.3s ease;
+			transition: color 0.3s ease;
 
 			&::after {
 				content: '';
 				position: absolute;
-				right: 0;
-				top: 0;
-				width: 100%;
+				left: 0;
+				bottom: -5px;
+				width: 0;
 				height: 2px;
+				background: $color-orange;
+				transition: width 0.3s ease;
+			}
+
+			&.active {
 				color: $color-orange;
+
+				&::after {
+					width: 80%;
+				}
 			}
 
 			&:hover {
 				color: $color-orange;
+
+				&::after {
+					width: 100%;
+				}
 			}
 		}
 	}

@@ -6,9 +6,30 @@ const Navigation = () => {
 	return (
 		<nav className={styles.nav}>
 			<div className={styles.list}>
-				<NavLink className={styles.link}>Главная</NavLink>
-				<NavLink className={styles.link}>Рецепты</NavLink>
-				<NavLink className={styles.link}>Контакты</NavLink>
+				<NavLink
+					to='/'
+					className={({ isActive }) =>
+						isActive ? `${styles.link} ${styles.active}` : styles.link
+					}
+				>
+					Главная
+				</NavLink>
+				<NavLink
+					to='recipes'
+					className={({ isActive }) =>
+						isActive ? `${styles.link} ${styles.active}` : styles.link
+					}
+				>
+					Рецепты
+				</NavLink>
+				<NavLink
+					to='contacts'
+					className={({ isActive }) =>
+						isActive ? `${styles.link} ${styles.active}` : styles.link
+					}
+				>
+					Контакты
+				</NavLink>
 			</div>
 		</nav>
 	)

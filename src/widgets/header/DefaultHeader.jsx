@@ -1,20 +1,15 @@
 import Container from '@/shared/ui/container/Container'
-import Logo from '@/shared/ui/logo/Logo'
-import Navigation from '../navigation/Navigation'
-import UserMenu from '../userMenu/UserMenu'
 import styles from './Header.module.scss'
+import HomeHeader from './HomeHeader'
 
 const DefaultHeader = () => {
 	return (
-		<header className={styles.header}>
+		<>
+			<HomeHeader />
 			<Container>
-				<div className={styles.inner}>
-					<Logo />
-					<Navigation />
-					<UserMenu />
-				</div>
+				<div className={styles.border} />
 			</Container>
-		</header>
+		</>
 	)
 }
 
