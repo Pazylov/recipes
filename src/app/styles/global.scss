@@ -1,3 +1,25 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+@import url(https://fonts.googleapis.com/css?family=Great+Vibes:regular);
+
+@import url(https://fonts.googleapis.com/css?family=Caveat:regular,500,600,700);
+
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:regular,500,600,700,800,900,italic,500italic,600italic,700italic,800italic,900italic);
+
+@font-face {
+	font-family: 'Georgia';
+	src: url('@/assets/fonts/georgiai.ttf') format('ttf'),
+		url('@/assets/fonts/georgiai.ttf') format('ttf');
+	font-weight: 400;
+	font-style: italic;
+}
+
 @import './reset';
 @import './variables';
 @import './mixins';
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: $color-background;
+	color: $color-text;
+}

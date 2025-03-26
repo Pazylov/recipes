@@ -1,14 +1,19 @@
+//Цвета
 $color-background: #f5f5dc;
 $color-text: #654321;
 $color-accent: #8b4513;
 $color-orange: #ffa500;
 $color-gold: #ffd700;
 $color-gray: #808080;
+$color-green: #10b981;
 
-// 🔤 Шрифты
-$font-main: 'Roboto', sans-serif;
-$font-logo: 'Pacifico', cursive;
+//Шрифты
+$font-roboto: 'Roboto', sans-serif;
+$font-logo: 'Great Vibes', sans-serif;
+$font-caveat: 'Caveat', sans-serif;
+$font-recipe: 'Playfair Display', sans-serif;
+$font-georgia: 'Georgia', sans-serif;
 
-// 📏 Размеры
-$container-width: 1200px;
-$border-radius: 12px;
+//Размеры
+$container-width: 1260px;
+$container-padding: 15px;
