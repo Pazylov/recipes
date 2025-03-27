@@ -42,3 +42,9 @@
 		}
 	}
 }
+
+@include between('mobile-s', 'laptop') {
+	.nav {
+		display: none;
+	}
+}

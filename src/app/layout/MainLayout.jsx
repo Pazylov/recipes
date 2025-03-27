@@ -1,6 +1,6 @@
 import Footer from '@/widgets/footer/Footer'
-import DefaultHeader from '@/widgets/header/DefaultHeader'
-import HomeHeader from '@/widgets/header/HomeHeader'
+import DefaultHeader from '@/widgets/header/ui/DefaultHeader'
+import HomeHeader from '@/widgets/header/ui/HomeHeader'
 import React from 'react'
 import { Outlet, useLocation } from 'react-router-dom'
 import styles from './MainLayout.module.scss'

@@ -1,0 +1,37 @@
+.userDropdown {
+	position: relative;
+	font-family: $font-roboto;
+
+	.dropdownMenu {
+		width: 180px;
+		height: auto;
+		position: absolute;
+		top: 35px;
+		right: 0;
+		display: flex;
+		flex-direction: column;
+		background: $color-accent;
+		border-radius: 6px;
+
+		.link {
+			padding: 12px 16px;
+			width: 100%;
+			height: 50px;
+			align-content: center;
+			font-weight: 400;
+			font-size: 16px;
+			letter-spacing: 1px;
+			color: #fff;
+			border-radius: 6px;
+			transition: background 0.3s ease;
+
+			&:last-child {
+				color: $color-red;
+			}
+
+			&:hover {
+				background: #a0522d;
+			}
+		}
+	}
+}

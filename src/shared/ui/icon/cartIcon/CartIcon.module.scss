@@ -1,0 +1,28 @@
+.icon {
+	transition: all 0.3s ease;
+}
+
+.default {
+	color: $color-text;
+	width: 24px;
+	height: 24px;
+}
+
+.header {
+	color: $color-text;
+	width: 30px;
+	height: 30px;
+}
+
+.product-card {
+	color: $color-white;
+	width: 16px;
+	height: 16px;
+}
+
+@include mobile-s {
+	.header {
+		width: 26px;
+		height: 26px;
+	}
+}

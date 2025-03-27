@@ -5,3 +5,9 @@
 	letter-spacing: 1px;
 	color: #8b4513;
 }
+
+@include mobile-s {
+	.logo {
+		font-size: 36px;
+	}
+}
