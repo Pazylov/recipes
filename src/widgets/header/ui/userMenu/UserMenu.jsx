@@ -4,15 +4,19 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import styles from './UserMenu.module.scss'
 
-const UserMenu = () => {
+const UserMenu = ({ onClose }) => {
 	return (
 		<ul className={styles.userMenu}>
-			<Link to='/favorite'>
-				<FavoriteIcon variant={'header'} />
-			</Link>
-			<Link to='/cart'>
-				<CartIcon variant={'header'} />
-			</Link>
+			<li>
+				<Link to='/favorite' onClick={onClose}>
+					<FavoriteIcon variant='header' />
+				</Link>
+			</li>
+			<li>
+				<Link to='/cart' onClick={onClose}>
+					<CartIcon variant='header' />
+				</Link>
+			</li>
 		</ul>
 	)
 }
