@@ -1,27 +1,27 @@
 import { create } from 'zustand'
-import { persist, devtools } from 'zustand/middleware'
+import { devtools, persist } from 'zustand/middleware'
 
-const useCartStore = create(
+const useFavoriteStore = create(
 	devtools(
 		persist(
 			(set, get) => ({
-				items: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+				items: [],
 
-				addToCart: product =>
+				addToFavorite: product =>
 					set(state => ({
 						items: [...state.items, product],
 					})),
 
-				removeFromCart: productId =>
+				removeFromFavorite: productId =>
 					set(state => ({
 						items: state.items.filter(item => item.id !== productId),
 					})),
 
 				clear: () => set({ items: [] }),
 			}),
-			{ name: 'cart-storage', getStorage: () => localStorage }
+			{ name: 'favorite-storage', getStorage: () => localStorage }
 		)
 	)
 )
 
-export default useCartStore
+export default useFavoriteStore
