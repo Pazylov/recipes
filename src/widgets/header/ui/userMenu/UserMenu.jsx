@@ -1,4 +1,4 @@
-import CartIcon from '@/shared/ui/icon/cartIcon/CartIcon'
+import CartBadge from '@/features/cart/ui/cartBadge/CartBadge'
 import FavoriteIcon from '@/shared/ui/icon/favoriteIcon/FavoriteIcon'
 import React from 'react'
 import { Link } from 'react-router-dom'
@@ -14,7 +14,7 @@ const UserMenu = ({ onClose }) => {
 			</li>
 			<li>
 				<Link to='/cart' onClick={onClose}>
-					<CartIcon variant='header' withBadge />
+					<CartBadge variant='header' />
 				</Link>
 			</li>
 		</ul>
