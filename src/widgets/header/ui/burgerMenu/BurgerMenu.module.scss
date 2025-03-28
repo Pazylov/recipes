@@ -18,10 +18,37 @@
 		gap: 30px;
 
 		.link {
+			position: relative;
 			font-weight: 700;
 			font-size: 28px;
 			letter-spacing: 1px;
-			color: $color-white;
+			color: $color-background;
+			transition: all 0.3s ease;
+
+			&::after {
+				content: '';
+				position: absolute;
+				bottom: -5px;
+				left: 0;
+				width: 0;
+				height: 2px;
+				background: $color-background;
+				transition: width 0.3s ease;
+			}
+
+			&.active {
+				font-style: italic;
+
+				&::after {
+					width: 80%;
+				}
+			}
+
+			&:hover {
+				&::after {
+					width: 100%;
+				}
+			}
 		}
 
 		@include mobile-s {
