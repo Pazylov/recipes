@@ -14,7 +14,7 @@ const UserMenu = ({ onClose }) => {
 			</li>
 			<li>
 				<Link to='/cart' onClick={onClose}>
-					<CartIcon variant='header' />
+					<CartIcon variant='header' withBadge />
 				</Link>
 			</li>
 		</ul>

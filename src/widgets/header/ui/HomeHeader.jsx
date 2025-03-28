@@ -11,6 +11,7 @@ import UserMenu from './userMenu/UserMenu'
 const HomeHeader = () => {
 	const [isBurgerOpen, setBurgerOpen] = useState(false)
 	const toggleBurger = () => setBurgerOpen(prev => !prev)
+	const onCloseBurgerMenu = () => setBurgerOpen(false)
 
 	return (
 		<header className={styles.header}>
@@ -21,8 +22,8 @@ const HomeHeader = () => {
 						<Logo />
 					</div>
 					<Navigation isOpen={isBurgerOpen} />
-					<BurgerMenu isOpen={isBurgerOpen} onClose={toggleBurger} />
-					<UserMenu onClose={toggleBurger} />
+					<BurgerMenu isOpen={isBurgerOpen} onClose={onCloseBurgerMenu} />
+					<UserMenu onClose={onCloseBurgerMenu} />
 				</div>
 			</Container>
 		</header>

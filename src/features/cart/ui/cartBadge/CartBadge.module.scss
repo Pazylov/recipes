@@ -1,0 +1,16 @@
+.badge {
+	font-family: $font-roboto;
+	position: absolute;
+	top: -5px;
+	right: -5px;
+	background-color: $color-red;
+	color: white;
+	font-size: 12px;
+	font-weight: 500;
+	border-radius: 50%;
+	width: 18px;
+	height: 18px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
