@@ -1,0 +1,44 @@
+.ourAdvantages {
+	margin-top: 80px;
+	.advantagesTitle {
+		text-align: center;
+	}
+
+	.cont {
+		margin-top: 25px;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		align-items: start;
+		gap: 40px;
+	}
+
+	@include between('mobile-s', 'tablet') {
+		.cont {
+			grid-template-columns: 1fr;
+			grid-template-rows: repeat(3, 1fr);
+			gap: 20px;
+		}
+	}
+}
+
+@include tablet {
+	.ourAdvantages {
+		margin-top: 50px;
+	}
+}
+
+@include mobile-l {
+	.ourAdvantages {
+		margin-top: 30px;
+	}
+}
+
+@include mobile-s {
+	.ourAdvantages {
+		margin-top: 20px;
+
+		.cont {
+			margin-top: 15px;
+		}
+	}
+}
