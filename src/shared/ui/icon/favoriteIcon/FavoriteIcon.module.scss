@@ -17,9 +17,16 @@
 	height: 30px;
 }
 
-.product-card {
+.remove-card {
 	fill: $color-gray;
 	color: $color-gray;
+	width: 30px;
+	height: 30px;
+}
+
+.add-card {
+	fill: $color-red;
+	color: $color-red;
 	width: 30px;
 	height: 30px;
 }
@@ -28,5 +35,27 @@
 	.header {
 		width: 26px;
 		height: 26px;
+	}
+
+	.add-card {
+		width: 24px;
+		height: 24px;
+	}
+
+	.remove-card {
+		width: 24px;
+		height: 24px;
+	}
+}
+
+@include between('laptop', 'desktop-xl') {
+	.add-card {
+		width: 24px;
+		height: 24px;
+	}
+
+	.remove-card {
+		width: 24px;
+		height: 24px;
 	}
 }
