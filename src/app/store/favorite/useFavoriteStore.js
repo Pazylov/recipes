@@ -14,7 +14,7 @@ const useFavoriteStore = create(
 
 				removeFromFavorite: id =>
 					set(state => ({
-						favorites: state.favorites.filter(fanId => fanId !== id),
+						favorites: state.favorites.filter(favId => favId !== id),
 					})),
 
 				toggleFavorite: id => {

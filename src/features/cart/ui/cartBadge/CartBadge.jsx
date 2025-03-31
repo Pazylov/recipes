@@ -5,7 +5,7 @@ import { useCartStore } from '@/app/store/stores'
 import styles from './CartBadge.module.scss'
 
 const CartBadge = ({ variant }) => {
-	const itemCount = useCartStore(state => state.items.length)
+	const itemCount = useCartStore(state => state.cart.length)
 
 	if (itemCount === 0) return null
 	return (

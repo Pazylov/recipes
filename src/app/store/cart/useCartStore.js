@@ -5,21 +5,29 @@ const useCartStore = create(
 	devtools(
 		persist(
 			(set, get) => ({
-				items: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+				cart: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
 
-				addToCart: product =>
+				addToCart: id =>
 					set(state => ({
-						items: [...state.items, product],
+						cart: [...new Set({ ...state.cart, id })],
 					})),
 
-				removeFromCart: productId =>
+				removeFromCart: id =>
 					set(state => ({
-						items: state.items.filter(item => item.id !== productId),
+						cart: state.cart.filter(cartId => cartId !== id),
 					})),
 
-				clear: () => set({ items: [] }),
+				toggleCart: id => {
+					set(state => ({
+						cart: state.cart.includes(id)
+							? state.cart.filter(cartId => cartId !== id)
+							: [...new Set([...state.cart, id])],
+					}))
+				},
+
+				clear: () => set({ cart: [] }),
 			}),
-			{ name: 'cart-storage', getStorage: () => localStorage }
+			{ name: 'cart-storage' }
 		)
 	)
 )
