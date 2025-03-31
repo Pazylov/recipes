@@ -23,7 +23,7 @@
 			font-family: $font-caveat;
 			font-weight: 700;
 			font-size: 64px;
-			letter-spacing: 0.02em;
+			letter-spacing: 1px;
 			color: $color-gold;
 		}
 
@@ -34,8 +34,65 @@
 			font-style: italic;
 			font-weight: 400;
 			font-size: 20px;
-			letter-spacing: 0.03em;
+			letter-spacing: 0.5px;
 			color: $color-white;
 		}
+
+		@include between('mobile-l', 'laptop') {
+			.title {
+				font-size: 48px;
+			}
+
+			.text {
+				max-width: 375px;
+				font-size: 16px;
+			}
+		}
+
+		@include mobile-s {
+			.title {
+				max-width: 240px;
+				font-size: 32px;
+			}
+
+			.text {
+				max-width: 300px;
+				font-size: 12px;
+			}
+		}
+	}
+}
+
+@include between('mobile-s', 'laptop') {
+	.hero {
+		align-content: center;
+
+		.content {
+			padding: 0;
+			gap: 15px;
+		}
+	}
+}
+
+@include desktop-xl {
+	.hero {
+		height: 760px;
+	}
+}
+
+@include tablet {
+	.hero {
+		height: 400px;
+	}
+}
+@include mobile-l {
+	.hero {
+		height: 320px;
+	}
+}
+
+@include mobile-s {
+	.hero {
+		height: 250px;
 	}
 }

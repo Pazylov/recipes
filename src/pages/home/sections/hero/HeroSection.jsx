@@ -1,6 +1,7 @@
 import Button from '@/shared/ui/btn/Button'
 import Container from '@/shared/ui/container/Container'
 import React from 'react'
+import { Link } from 'react-router-dom'
 import styles from './HeroSection.module.scss'
 
 const HeroSection = () => {
@@ -14,7 +15,9 @@ const HeroSection = () => {
 						инструкции, секреты вкусной выпечки и вдохновение для ваших
 						кулинарных шедевров.
 					</p>
-					<Button>Смотреть рецепты</Button>
+					<Link to='/recipes'>
+						<Button>Смотреть рецепты</Button>
+					</Link>
 				</div>
 			</Container>
 		</section>
