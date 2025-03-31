@@ -1,5 +1,15 @@
 .popular {
+	margin-top: 80px;
+
 	.popularTitle {
 		text-align: center;
+	}
+
+	.cont {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 20px;
+		flex-wrap: wrap;
 	}
 }
