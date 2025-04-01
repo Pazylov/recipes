@@ -1,6 +1,7 @@
 import Container from '@/shared/ui/container/Container'
 import Title from '@/shared/ui/title/Title'
 import React from 'react'
+import ProductCard from '../../../../entities/productCard/ProductCard'
 import styles from './PopularRecipes.module.scss'
 
 const PopularRecipes = () => {
@@ -10,7 +11,9 @@ const PopularRecipes = () => {
 				<Title className={styles.popularTitle} variant='large'>
 					Попробуйте наши лучшие рецепты!
 				</Title>
-				<div className={styles.cont}></div>
+				<div className={styles.cont}>
+					<ProductCard />
+				</div>
 			</Container>
 		</section>
 	)

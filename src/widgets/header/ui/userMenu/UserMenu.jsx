@@ -1,4 +1,4 @@
-import CartBadge from '@/features/cart/ui/cartBadge/CartBadge'
+import CartBadge from '@/features/cart/cartBadge/CartBadge'
 import FavoriteIcon from '@/shared/ui/icon/favoriteIcon/FavoriteIcon'
 import React from 'react'
 import { Link } from 'react-router-dom'

@@ -1,7 +1,7 @@
-import CartIcon from '@/shared/ui/icon/cartIcon/CartIcon'
 import React from 'react'
 
 import { useCartStore } from '@/app/store/stores'
+import CartIcon from '@/shared/ui/icon/cartIcon/CartIcon'
 import styles from './CartBadge.module.scss'
 
 const CartBadge = ({ variant }) => {

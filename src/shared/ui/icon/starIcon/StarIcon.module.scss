@@ -1,0 +1,15 @@
+.icon {
+	transition: all 0.3s ease;
+	width: 18px;
+	height: 18px;
+}
+
+.active {
+	fill: $color-gold;
+	color: $color-gold;
+}
+
+.disable {
+	fill: rgba(255, 217, 0, 0.4);
+	color: rgba(255, 217, 0, 0.4);
+}
