@@ -5,35 +5,46 @@ import FavoriteButton from '@/features/favorite/ui/favoriteButton/FavoriteButton
 import CardTag from '@/shared/ui/cardTag/CardTag'
 import ClockIcon from '@/shared/ui/icon/clockIcon/ClockIcon'
 
+import CardButton from '@/features/cardButton/CardButton'
 import RatingStars from '@/features/rating/ratingStars/RatingStars'
+import Price from './price/Price'
 import styles from './ProductCard.module.scss'
 import ProductInfo from './productInfo/ProductInfo'
 
-const ProductCard = ({ id }) => {
+const ProductCard = ({
+	id,
+	title,
+	rating,
+	img,
+	tag,
+	cookingTime,
+	productInfo,
+	originalPrice,
+	discountPrice,
+}) => {
 	return (
 		<div className={styles.productCard}>
-			<Link className={styles.img} to={`/recipes/${id}`}>
-				<img src='/card/card-preview.jpg' alt='Card preview' />
+			<Link to={`/recipes/${id}`}>
+				<img className={styles.img} src={img} alt='Card preview' />
 			</Link>
-			<FavoriteButton className={styles.btnFavorite} />
-			<CardTag className={styles.tag} variant='popular'>
-				Популярное
+			<FavoriteButton className={styles.btnFavorite} productId={id} />
+			<CardTag className={styles.tag} tag={tag}>
+				{tag}
 			</CardTag>
-			<h3 className={styles.title}>
-				Изысканные кольца кальмаров с острым айоли и салатом
-			</h3>
+			<h3 className={styles.title}>{title}</h3>
 			<div className={styles.ratingTime}>
-				<RatingStars rating={4} />
+				<RatingStars rating={rating} />
 				<p className={styles.cookingTime}>
 					<ClockIcon size={16} />
-					30 мин
+					{cookingTime} мин
 				</p>
 			</div>
-			<ProductInfo
-				className={styles.info}
-				category='Закуска'
-				cuisine='Азиатская'
-				season='Зимнее блюдо'
+			<ProductInfo className={styles.info} {...productInfo} />
+			<Price originalPrice={originalPrice} discountPrice={discountPrice} />
+			<CardButton
+				productId={id}
+				originalPrice={originalPrice}
+				discountPrice={discountPrice}
 			/>
 		</div>
 	)

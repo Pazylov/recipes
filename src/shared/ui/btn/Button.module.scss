@@ -24,6 +24,58 @@
 	}
 }
 
+.add-cart {
+	width: 100%;
+	height: auto;
+	text-align: center;
+	font-weight: 700;
+	color: $color-white;
+	background: $color-accent;
+
+	&:hover {
+		background: #a0522d;
+	}
+}
+
+.remove-cart {
+	width: 100%;
+	height: auto;
+	text-align: center;
+	font-weight: 700;
+	color: $color-white;
+	background: #af5a32;
+
+	&:hover {
+		background: $color-accent;
+	}
+}
+
+.buy {
+	width: 100%;
+	height: auto;
+	text-align: center;
+	font-weight: 700;
+	color: $color-white;
+	background: $color-orange;
+
+	&:hover {
+		background: $color-gold;
+	}
+}
+
+.free {
+	width: 100%;
+	height: auto;
+	font-weight: 700;
+	text-align: center;
+	color: $color-white;
+	background: $color-green;
+
+	&:hover {
+		background: #0f9d72;
+	}
+}
+
 @include between('mobile-s', 'tablet') {
 	.btn {
 		padding: 8px 16px;

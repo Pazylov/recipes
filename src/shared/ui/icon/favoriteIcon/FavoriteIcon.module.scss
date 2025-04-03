@@ -17,18 +17,18 @@
 	height: 30px;
 }
 
-.add-card {
+.add {
 	fill: $color-red;
 	color: $color-red;
-	width: 30px;
-	height: 30px;
+	width: 28px;
+	height: 28px;
 }
 
-.remove-card {
+.remove {
 	fill: $color-gray;
 	color: $color-gray;
-	width: 30px;
-	height: 30px;
+	width: 28px;
+	height: 28px;
 }
 
 @include mobile-s {

@@ -9,7 +9,7 @@ const useFavoriteStore = create(
 
 				addToFavorite: id =>
 					set(state => ({
-						favorites: [...new Set([...state.favorites, id])],
+						favorites: [...state.favorites, id],
 					})),
 
 				removeFromFavorite: id =>
@@ -18,11 +18,12 @@ const useFavoriteStore = create(
 					})),
 
 				toggleFavorite: id => {
-					set(state => ({
-						favorites: state.favorites.includes(id)
-							? state.favorites.filter(favId => favId !== id)
-							: [...new Set({ ...state.favorites, id })],
-					}))
+					const { favorites } = get()
+					set({
+						favorites: favorites.includes(id)
+							? favorites.filter(favId => favId !== id)
+							: [...favorites, id],
+					})
 				},
 
 				clearFavorites: () => set({ favorites: [] }),

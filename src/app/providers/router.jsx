@@ -7,6 +7,7 @@ import ProfilePage from '@/pages/profile/ProfilePage'
 import RecipesPage from '@/pages/recipes/RecipesPage'
 import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import ProductPage from '../../pages/product/ProductPage'
 import MainLayout from '../layout/MainLayout'
 
 export const AppRouter = () => {
@@ -22,6 +23,7 @@ export const AppRouter = () => {
 					<Route path='/favorite' element={<FavoritePage />} />
 					<Route path='/cart' element={<CartPage />} />
 					<Route path='/profile' element={<ProfilePage />} />
+					<Route path='/recipes/:id' element={<ProductPage />} />
 				</Route>
 
 				<Route path='*' element={<NotFoundPage />} />

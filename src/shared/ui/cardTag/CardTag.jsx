@@ -2,11 +2,22 @@ import clsx from 'clsx'
 import React from 'react'
 import styles from './CardTag.module.scss'
 
-const CardTag = ({ children, variant = 'popular', className }) => {
+const CardTag = ({ children, tag, className }) => {
 	return (
-		<div className={clsx(styles.cardTag, styles[variant], className)}>
+		<span
+			className={clsx(
+				styles.cardTag,
+				{
+					[styles.popular]: tag === 'Популярное',
+					[styles.new]: tag === 'Новинка',
+					[styles.top]: tag === 'Топ',
+					[styles.discount]: tag === true,
+				},
+				className
+			)}
+		>
 			{children}
-		</div>
+		</span>
 	)
 }
 

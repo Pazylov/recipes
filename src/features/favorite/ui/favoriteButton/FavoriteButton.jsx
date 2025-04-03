@@ -12,12 +12,12 @@ const FavoriteButton = ({ productId, className }) => {
 	return (
 		<button
 			className={clsx(styles.favoriteBtn, className)}
-			onClick={() => toggleFavorite(1)}
+			onClick={() => toggleFavorite(productId)}
 		>
 			{isFavorite ? (
-				<FavoriteIcon variant='add-card' />
+				<FavoriteIcon variant='add' />
 			) : (
-				<FavoriteIcon variant='remove-card' />
+				<FavoriteIcon variant='remove' />
 			)}
 		</button>
 	)

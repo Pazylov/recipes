@@ -1,7 +1,8 @@
+import { CARD } from '@/entities/productCard/lib/card.data'
+import ProductCard from '@/entities/productCard/ProductCard'
 import Container from '@/shared/ui/container/Container'
 import Title from '@/shared/ui/title/Title'
 import React from 'react'
-import ProductCard from '../../../../entities/productCard/ProductCard'
 import styles from './PopularRecipes.module.scss'
 
 const PopularRecipes = () => {
@@ -12,7 +13,9 @@ const PopularRecipes = () => {
 					Попробуйте наши лучшие рецепты!
 				</Title>
 				<div className={styles.cont}>
-					<ProductCard />
+					{CARD.map(product => (
+						<ProductCard key={product.id} {...product} />
+					))}
 				</div>
 			</Container>
 		</section>
