@@ -9,7 +9,9 @@ const useFavoriteStore = create(
 
 				addToFavorite: id =>
 					set(state => ({
-						favorites: [...state.favorites, id],
+						favorites: state.favorites.includes(id)
+							? state.favorites
+							: [...state.favorites, id],
 					})),
 
 				removeFromFavorite: id =>

@@ -6,29 +6,41 @@
 	flex-direction: column;
 	justify-content: end;
 	font-family: $font-roboto;
-}
 
-.price {
-	font-weight: 700;
-	font-size: 18px;
-	letter-spacing: 0.5px;
-	color: $color-accent;
-}
+	.price {
+		font-weight: 700;
+		font-size: 18px;
+		letter-spacing: 0.5px;
+		color: $color-accent;
 
-.oldPrice {
-	text-decoration: line-through;
-	margin-right: 6px;
-	font-weight: 400;
-	font-size: 14px;
-	color: rgba(128, 128, 128, 0.6);
-}
+		.oldPrice {
+			text-decoration: line-through;
+			margin-right: 6px;
+			font-weight: 400;
+			font-size: 14px;
+			color: rgba(128, 128, 128, 0.6);
+		}
 
-.discountedPrice {
-	color: $color-green;
-}
+		.discountedPrice {
+			color: $color-green;
+		}
 
-.free {
-	color: $color-green;
+		.free {
+			color: $color-green;
+		}
+	}
+
+	@include between('laptop', 'desktop-xl') {
+		.price {
+			font-size: 16px;
+		}
+	}
+
+	@include mobile-s {
+		.price {
+			font-size: 16px;
+		}
+	}
 }
 
 .centered {

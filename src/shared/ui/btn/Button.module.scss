@@ -25,8 +25,9 @@
 }
 
 .add-cart {
+	padding: 10px;
 	width: 100%;
-	height: auto;
+	height: 40px;
 	text-align: center;
 	font-weight: 700;
 	color: $color-white;
@@ -38,8 +39,9 @@
 }
 
 .remove-cart {
+	padding: 10px;
 	width: 100%;
-	height: auto;
+	height: 40px;
 	text-align: center;
 	font-weight: 700;
 	color: $color-white;
@@ -51,8 +53,9 @@
 }
 
 .buy {
+	padding: 10px;
 	width: 100%;
-	height: auto;
+	height: 40px;
 	text-align: center;
 	font-weight: 700;
 	color: $color-white;
@@ -64,8 +67,9 @@
 }
 
 .free {
+	padding: 10px;
 	width: 100%;
-	height: auto;
+	height: 40px;
 	font-weight: 700;
 	text-align: center;
 	color: $color-white;
@@ -77,8 +81,26 @@
 }
 
 @include between('mobile-s', 'tablet') {
-	.btn {
+	.default {
 		padding: 8px 16px;
 		font-size: 12px;
+	}
+}
+
+@include between('laptop', 'desktop-xl') {
+	.add-cart,
+	.remove-cart,
+	.buy,
+	.free {
+		font-size: 14px;
+	}
+}
+
+@include mobile-s {
+	.add-cart,
+	.remove-cart,
+	.buy,
+	.free {
+		font-size: 14px;
 	}
 }

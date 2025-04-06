@@ -14,7 +14,11 @@ const PopularRecipes = () => {
 				</Title>
 				<div className={styles.cont}>
 					{CARD.map(product => (
-						<ProductCard key={product.id} {...product} />
+						<ProductCard
+							className={styles.card}
+							key={product.id}
+							{...product}
+						/>
 					))}
 				</div>
 			</Container>

@@ -9,7 +9,7 @@ const useCartStore = create(
 
 				addToCart: id =>
 					set(state => ({
-						cart: [...state.cart, id],
+						cart: state.cart.includes(id) ? state.cart : [...state.cart, id],
 					})),
 
 				removeFromCart: id =>

@@ -10,11 +10,13 @@
 	font-family: $font-roboto;
 
 	.img {
+		width: 100%;
+		height: auto;
 		border-radius: 12px 12px 0 0;
 	}
 
 	.title {
-		top: 12px;
+		margin-top: 12px;
 		font-weight: 700;
 		font-size: 22px;
 		letter-spacing: 0.5px;
@@ -42,5 +44,27 @@
 
 	.info {
 		margin-top: 8px;
+	}
+}
+
+@include between('laptop', 'desktop-xl') {
+	.productCard {
+		padding: 16px;
+		width: 270px;
+
+		.title {
+			font-size: 20px;
+		}
+	}
+}
+
+@include mobile-s {
+	.productCard {
+		padding: 16px;
+		width: 270px;
+
+		.title {
+			font-size: 20px;
+		}
 	}
 }

@@ -6,3 +6,17 @@
 	width: fit-content;
 	height: fit-content;
 }
+
+@include between('laptop', 'desktop-xl') {
+	.favoriteBtn {
+		top: 24px;
+		right: 24px;
+	}
+}
+
+@include mobile-s {
+	.favoriteBtn {
+		top: 24px;
+		right: 24px;
+	}
+}
