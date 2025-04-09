@@ -8,9 +8,9 @@ import ClockIcon from '@/shared/ui/icon/clockIcon/ClockIcon'
 import CardButton from '@/features/cardButton/CardButton'
 import RatingStars from '@/features/rating/ratingStars/RatingStars'
 import clsx from 'clsx'
-import Price from './price/Price'
+import Price from '../price/Price'
+import ProductInfo from '../productInfo/ProductInfo'
 import styles from './ProductCard.module.scss'
-import ProductInfo from './productInfo/ProductInfo'
 
 const ProductCard = ({
 	id,

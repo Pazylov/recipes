@@ -3,14 +3,14 @@ import ProductCardList from '@/entities/product/productCardList/productCardList'
 import Container from '@/shared/ui/container/Container'
 import Title from '@/shared/ui/title/Title'
 import React from 'react'
-import styles from './PopularRecipes.module.scss'
+import styles from './Bestsellers.module.scss'
 
-const PopularRecipes = () => {
+const Bestsellers = () => {
 	return (
-		<section className={styles.popular}>
+		<section className={styles.bestsellers}>
 			<Container>
-				<Title className={styles.popularTitle} variant='large'>
-					Попробуйте наши лучшие рецепты!
+				<Title className={styles.bestsellersTitle} variant='large'>
+					Хиты продаж
 				</Title>
 				<ProductCardList cards={CARD} />
 			</Container>
@@ -18,4 +18,4 @@ const PopularRecipes = () => {
 	)
 }
 
-export default PopularRecipes
+export default Bestsellers

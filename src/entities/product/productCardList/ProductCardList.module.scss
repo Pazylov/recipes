@@ -1,0 +1,31 @@
+.productCardList {
+	margin-top: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+
+@include laptop {
+	.productCardList {
+		.card:nth-child(4) {
+			display: none;
+		}
+	}
+}
+
+@include mobile-s {
+	.productCardList {
+		margin-top: 10px;
+	}
+}
+
+@include between('mobile-s', 'tablet') {
+	.productCardList {
+		.card:nth-child(3),
+		.card:nth-child(4) {
+			display: none;
+		}
+	}
+}
