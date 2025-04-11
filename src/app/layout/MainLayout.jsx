@@ -1,4 +1,4 @@
-import Footer from '@/widgets/footer/Footer'
+import Footer from '@/widgets/footer/ui/Footer'
 import DefaultHeader from '@/widgets/header/ui/DefaultHeader'
 import HomeHeader from '@/widgets/header/ui/HomeHeader'
 import React from 'react'

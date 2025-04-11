@@ -23,3 +23,8 @@ body {
 	background-color: $color-background;
 	color: $color-text;
 }
+
+.no-scroll {
+	overflow: hidden;
+	height: 100vh;
+}

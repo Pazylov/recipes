@@ -1,0 +1,27 @@
+.wrapper {
+	display: flex;
+	justify-content: center;
+	gap: 15px;
+
+	.icon {
+		width: 30px;
+		height: 30px;
+
+		img {
+			width: 100%;
+			height: 100%;
+			transition: transform 0.3s ease;
+
+			&:hover {
+				transform: scale(1.1);
+			}
+		}
+	}
+
+	@include between('mobile-s', 'tablet') {
+		.icon {
+			width: 24px;
+			height: 24px;
+		}
+	}
+}

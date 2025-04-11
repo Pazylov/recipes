@@ -15,16 +15,14 @@ const HomeHeader = () => {
 
 	return (
 		<header className={styles.header}>
-			<Container>
-				<div className={styles.inner}>
-					<div className={styles.cont}>
-						<BurgerButton isOpen={isBurgerOpen} onClick={toggleBurger} />
-						<Logo />
-					</div>
-					<Navigation isOpen={isBurgerOpen} />
-					<BurgerMenu isOpen={isBurgerOpen} onClose={onCloseBurgerMenu} />
-					<UserMenu onClose={onCloseBurgerMenu} />
+			<Container className={styles.headerContainer}>
+				<div className={styles.cont}>
+					<BurgerButton isOpen={isBurgerOpen} onClick={toggleBurger} />
+					<Logo variant='header' />
 				</div>
+				<Navigation isOpen={isBurgerOpen} />
+				<BurgerMenu isOpen={isBurgerOpen} onClose={onCloseBurgerMenu} />
+				<UserMenu onClose={onCloseBurgerMenu} />
 			</Container>
 		</header>
 	)

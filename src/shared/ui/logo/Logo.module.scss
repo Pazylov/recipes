@@ -3,11 +3,29 @@
 	font-weight: 400;
 	font-size: 40px;
 	letter-spacing: 1px;
-	color: #8b4513;
+}
+
+.header {
+	color: $color-accent;
+}
+
+.footer {
+	font-size: 48px;
+	color: $color-background;
+}
+
+@include mobile-l {
+	.footer {
+		font-size: 40px;
+	}
 }
 
 @include mobile-s {
 	.logo {
+		font-size: 36px;
+	}
+
+	.footer {
 		font-size: 36px;
 	}
 }
