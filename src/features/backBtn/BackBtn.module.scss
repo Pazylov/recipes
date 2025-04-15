@@ -1,0 +1,15 @@
+.backBtn {
+	display: flex;
+	align-items: center;
+
+	font-family: $font-roboto;
+	font-weight: 700;
+	font-size: 18px;
+	letter-spacing: 0.5px;
+	color: $color-accent;
+
+	svg {
+		width: 24px;
+		height: 24px;
+	}
+}
