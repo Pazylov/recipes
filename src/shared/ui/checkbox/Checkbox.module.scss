@@ -1,20 +1,46 @@
-.wrapper {
+.checkboxWrapper {
 	display: flex;
+	align-items: center;
 	gap: 8px;
+	cursor: pointer;
+	user-select: none;
 
 	.checkbox {
+		appearance: none;
 		width: 18px;
 		height: 18px;
-		outline: none;
 		border: 2px solid $color-accent;
+		background-color: $color-background;
 		border-radius: 2px;
+		position: relative;
+		transition: all 0.3s ease;
+
+		&:hover {
+			border-color: #ffa500;
+		}
+
+		&:checked::after {
+			content: '';
+			position: absolute;
+			top: 1px;
+			left: 4px;
+			width: 4px;
+			height: 8px;
+			border: solid $color-text;
+			border-width: 0 2px 2px 0;
+			transform: rotate(45deg);
+		}
+
+		&:checked + .text {
+			font-weight: 700;
+		}
 	}
 
 	.text {
+		color: #4a2e1e;
 		font-family: $font-roboto;
 		font-weight: 400;
 		font-size: 16px;
-		letter-spacing: 0.5px;
-		color: #4a2e1e;
+		letter-spacing: 0.03em;
 	}
 }

@@ -2,8 +2,20 @@
 	padding: 20px;
 	width: 300px;
 	height: 900px;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
 	background: #faebc8;
 	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
 	border: 1px solid #d3b683;
 	border-radius: 12px;
+
+	.categoryWrapper {
+		display: grid;
+		gap: 12px;
+		.recipesItems {
+			display: grid;
+			gap: 10px;
+		}
+	}
 }
