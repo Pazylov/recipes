@@ -18,6 +18,9 @@ const Sidebar = ({ className }) => {
 				</div>
 				<BorderBottom className={styles.borderBottom} />
 			</div>
+			<div className={styles.timeCooking}>
+				<SidebarTitle>Время приготовления</SidebarTitle>
+			</div>
 		</div>
 	)
 }
