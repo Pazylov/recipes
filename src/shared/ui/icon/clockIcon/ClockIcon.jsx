@@ -1,8 +1,9 @@
 import React from 'react'
 
-const ClockIcon = ({ size }) => {
+const ClockIcon = ({ size, className }) => {
 	return (
 		<svg
+			className={className}
 			width={size}
 			height={size}
 			fill='none'

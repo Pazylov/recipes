@@ -1,5 +1,6 @@
 import clsx from 'clsx'
 import React from 'react'
+import TimeFilter from '../../../features/sidebarFilters/ui/TimeFilter'
 import BorderBottom from '../../../shared/ui/border/BorderBottom'
 import Checkbox from '../../../shared/ui/checkbox/Checkbox'
 import SidebarTitle from '../../../shared/ui/sidebarTitle/SidebarTitle'
@@ -20,6 +21,7 @@ const Sidebar = ({ className }) => {
 			</div>
 			<div className={styles.timeCooking}>
 				<SidebarTitle>Время приготовления</SidebarTitle>
+				<TimeFilter />
 			</div>
 		</div>
 	)
