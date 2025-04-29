@@ -5,7 +5,7 @@ const useCardProductsStore = create(
 	devtools(set => ({
 		card: [],
 
-		setCard: product => set({ card: product }),
+		setCard: products => set({ card: products }),
 	}))
 )
 

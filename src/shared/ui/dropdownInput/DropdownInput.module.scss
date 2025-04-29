@@ -69,6 +69,7 @@
 	border-top: none;
 	border-radius: 0 0 8px 8px;
 	z-index: 10;
+	overflow: hidden;
 }
 
 .option {
@@ -88,7 +89,6 @@
 .active {
 	background-color: $color-accent;
 	color: $color-background;
-	border-radius: 0 0 8px 8px;
 
 	&:hover {
 		color: inherit;
