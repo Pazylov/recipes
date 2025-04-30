@@ -1,0 +1,16 @@
+.price {
+	display: grid;
+	gap: 12px;
+
+	.title {
+		position: relative;
+		.currency {
+			position: absolute;
+			top: 50%;
+			left: 50px;
+			transform: translateY(-50%);
+			font-size: 14px;
+			opacity: 0.8;
+		}
+	}
+}
