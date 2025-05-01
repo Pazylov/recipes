@@ -59,4 +59,35 @@ export const CARD = [
 		originalPrice: 150,
 		discountPrice: 150,
 	},
+	{
+		id: 5,
+		title: 'Изысканные кольца кальмаров с острым айоли и салатом',
+		img: '/card/card-preview.jpg',
+		tag: 'Новинка',
+		rating: 3,
+		cookingTime: 15,
+		productInfo: {
+			category: 'Закуска',
+			cuisine: 'Азиатская',
+			season: 'Осеннее блюдо',
+		},
+		originalPrice: 0,
+		discountPrice: 0,
+	},
+
+	{
+		id: 6,
+		title: 'Изысканные кольца кальмаров с острым айоли и салатом',
+		img: '/card/card-preview.jpg',
+		tag: 'Новинка',
+		rating: 3,
+		cookingTime: 15,
+		productInfo: {
+			category: 'Закуска',
+			cuisine: 'Азиатская',
+			season: 'Осеннее блюдо',
+		},
+		originalPrice: 0,
+		discountPrice: 0,
+	},
 ]
