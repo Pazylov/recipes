@@ -33,21 +33,27 @@ const ProductCard = ({
 			<CardTag className={styles.tag} tag={tag}>
 				{tag}
 			</CardTag>
-			<h3 className={styles.title}>{title}</h3>
-			<div className={styles.ratingTime}>
-				<RatingStars rating={rating} />
-				<p className={styles.cookingTime}>
-					<ClockIcon size={16} />
-					{cookingTime} мин
-				</p>
+			<div className={styles.content}>
+				<h3 className={styles.title} title={title}>
+					{title}
+				</h3>
+				<div className={styles.wrapper}>
+					<div className={styles.ratingTime}>
+						<RatingStars rating={rating} />
+						<p className={styles.cookingTime}>
+							<ClockIcon size={16} />
+							{cookingTime} мин
+						</p>
+					</div>
+					<ProductInfo className={styles.info} {...productInfo} />
+					<Price originalPrice={originalPrice} discountPrice={discountPrice} />
+					<CardButton
+						productId={id}
+						originalPrice={originalPrice}
+						discountPrice={discountPrice}
+					/>
+				</div>
 			</div>
-			<ProductInfo className={styles.info} {...productInfo} />
-			<Price originalPrice={originalPrice} discountPrice={discountPrice} />
-			<CardButton
-				productId={id}
-				originalPrice={originalPrice}
-				discountPrice={discountPrice}
-			/>
 		</div>
 	)
 }
