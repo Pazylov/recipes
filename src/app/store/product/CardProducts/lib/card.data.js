@@ -1,7 +1,7 @@
 export const CARD = [
 	{
 		id: 1,
-		title: 'Изысканные кольца кальмаров с острым айоли',
+		title: 'Яблочный пирог',
 		img: '/card/card-preview.jpg',
 		tag: 'Популярное',
 		rating: 4,
