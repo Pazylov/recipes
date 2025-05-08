@@ -1,6 +1,7 @@
 .wrapper {
 	margin-top: 20px;
 	display: flex;
+	justify-content: center;
 	gap: 20px;
 
 	.content {
@@ -11,5 +12,44 @@
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 		gap: 20px;
+
+		@include between('tablet', 'desktop') {
+			.cards {
+				width: 300px;
+			}
+		}
+
+		@include mobile-s {
+			.cards {
+				width: 270px;
+			}
+		}
+	}
+	@include between('mobile-s', 'desktop-xl') {
+		.wrapperCards {
+			justify-content: center;
+		}
+	}
+
+	@include tablet {
+		.wrapperCards {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+
+	@include between('mobile-s', 'tablet') {
+		.content {
+			justify-items: center;
+		}
+
+		.wrapperCards {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	@include mobile-s {
+		.input {
+			width: 300px;
+		}
 	}
 }

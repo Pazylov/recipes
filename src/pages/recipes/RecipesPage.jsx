@@ -14,10 +14,10 @@ const RecipesPage = () => {
 			<div className={styles.wrapper}>
 				<Sidebar className={styles.sidebar} />
 				<div className={styles.content}>
-					<SearchInputFilter />
+					<SearchInputFilter className={styles.input} />
 					<div className={styles.wrapperCards}>
 						{products.map(item => (
-							<ProductCard key={item.id} {...item} />
+							<ProductCard key={item.id} {...item} className={styles.cards} />
 						))}
 					</div>
 				</div>
