@@ -1,4 +1,3 @@
-import React from 'react'
 import ProductCard from '../productCard/ProductCard'
 import styles from './productCardList.module.scss'
 

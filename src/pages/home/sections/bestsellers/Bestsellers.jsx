@@ -1,7 +1,6 @@
-import ProductCardList from '@/entities/product/productCardList/productCardList'
+import ProductCardList from '@/entities/product/productCardList/ProductCardList'
 import Container from '@/shared/ui/container/Container'
 import Title from '@/shared/ui/title/Title'
-import React from 'react'
 import useBestsellerRecipesStore from '../../../../app/store/bestsellersRecipes/model/useBestsellerRecipesStore'
 import styles from './Bestsellers.module.scss'
 

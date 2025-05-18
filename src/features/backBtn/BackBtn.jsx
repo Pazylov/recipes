@@ -1,6 +1,5 @@
 import clsx from 'clsx'
 import { ChevronLeft } from 'lucide-react'
-import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import styles from './BackBtn.module.scss'
 

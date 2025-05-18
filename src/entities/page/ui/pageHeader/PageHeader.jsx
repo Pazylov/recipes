@@ -1,6 +1,5 @@
-import BackBtn from '@/features/backBtn/backBtn'
+import BackBtn from '@/features/backBtn/BackBtn'
 import PageTitle from '@/shared/ui/pageTitle/PageTitle'
-import React from 'react'
 import styles from './PageHeader.module.scss'
 
 const PageHeader = ({ children, variant }) => {
